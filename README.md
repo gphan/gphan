@@ -2,30 +2,33 @@
 
 ### About Me
 ```ruby
-  working_on = "Shopify"
+working_at do
+  "Shopify"
+end
 
-  learning do
-    ["Learning Ruby on Rails", "Learning React", "Learning GraphQL"]
-  end
+learning do
+  ["Ruby on Rails", "React", "GraphQL"]
+end
 
-  previous_experiences do |industry|
-    industry.years = 10
-    industry.skills ["Java", "Microservices"]
-  end
+previous_experiences do |industry|
+  industry.years = "10+"
+  industry.years_actual = nil
+  industry.skills ["Java", "Microservices", "AWS", "Content Management"]
+end
 
-  personal_interests do 
-    ["Video Games", "Reading", "Long Walks"]
-  end
+personal_interests do 
+  ["Video Games", "Reading", "Long Walks"]
+end
 
-  currently_playing = "Elden Ring"
-  
-  reach_me do |at|
-    at.linkedin "https://www.linkedin.com/in/giangphan/"
-    # Technically you're viewing it now
-    at.github "https://github.com/gphan"
-  end
+currently_playing "Elden Ring"
 
-  pronouns do
-    "he/him"
-  end
+find_me do |at|
+  at.linkedin "https://www.linkedin.com/in/giangphan"
+  at.github "https://github.com/gphan"
+  at.website "https://www.giangphan.com"
+end
+
+pronouns do
+  "he/him"
+end
 ```
