@@ -1,16 +1,31 @@
-### Hi there 👋
+### Hi there 👋 I'm Giang
 
-<!--
-**gphan/gphan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### About Me
+```ruby
+  working_on = "Shopify"
 
-Here are some ideas to get you started:
+  learning do
+    ["Learning Ruby on Rails", "Learning React", "Learning GraphQL"]
+  end
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  previous_experiences do |industry|
+    industry.years = 10
+    industry.skills ["Java", "Microservices"]
+  end
+
+  personal_interests do 
+    ["Video Games", "Reading", "Long Walks"]
+  end
+
+  currently_playing = "Elden Ring"
+  
+  reach_me do |at|
+    at.linkedin "https://www.linkedin.com/in/giangphan/"
+    # Technically you're viewing it now
+    at.github "https://github.com/gphan"
+  end
+
+  pronouns do
+    "he/him"
+  end
+```
