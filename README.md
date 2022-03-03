@@ -2,34 +2,44 @@
 
 ### About Me
 ```ruby
-working_at do
-  "Shopify"
-end
+require "readme_dsl"
 
-learning do
-  ["Ruby on Rails", "React", "GraphQL"]
-end
+class SoftwareEngineer < ReadmeDSL
 
-previous_experiences do |industry|
-  industry.years = "10+"
-  industry.years_actual = nil
-  industry.skills ["Java", "Microservices", "AWS", "Content Management"]
-end
+  working :currently do
+    "Shopify"
+  end
 
-personal_interests do |era|
-  era.during_covid ["Video Games", "Reading", "Long Walks"]
-  era.before_covid ["Video Games", "Traveling", "Long Walks on Tropical Beaches"]
-end
+  working :previously do
+    ["Nike", "Ubiquiti"]
+  end
 
-currently_playing "Elden Ring"
+  learning do
+    ["Ruby on Rails", "React", "GraphQL"]
+  end
 
-find_me do |at|
-  at.linkedin "https://www.linkedin.com/in/giangphan"
-  at.github "https://github.com/gphan"
-  at.website "https://www.giangphan.com"
-end
+  previous_experiences do |industry|
+    industry.years = "10+"
+    industry.years_actual = nil
+    industry.skills = ["Java", "Microservices", "AWS", "Content Management"]
+  end
 
-pronouns do
-  "he/him"
+  personal_interests do |era|
+    era.during_covid ["Video Games", "Reading", "Long Walks"]
+    era.before_covid ["Video Games", "Traveling", "Long Walks on Tropical Beaches"]
+  end
+
+  currently_playing "Elden Ring"
+
+  find_me do |at|
+    at[:linkedin] = "https://www.linkedin.com/in/giangphan"
+    at[:github] = "https://github.com/gphan"
+    at[:website] = "https://www.giangphan.com"
+  end
+
+  pronouns do
+    "he/him"
+  end
+
 end
 ```
