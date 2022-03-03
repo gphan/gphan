@@ -16,8 +16,9 @@ previous_experiences do |industry|
   industry.skills ["Java", "Microservices", "AWS", "Content Management"]
 end
 
-personal_interests do 
-  ["Video Games", "Reading", "Long Walks"]
+personal_interests do |era|
+  era.during_covid ["Video Games", "Reading", "Long Walks"]
+  era.before_covid ["Video Games", "Traveling", "Long Walks on Tropical Beaches"]
 end
 
 currently_playing "Elden Ring"
