@@ -4,7 +4,7 @@
 ```ruby
 require "readme_dsl"
 
-class SoftwareEngineer < ReadmeDSL
+class SoftwareEngineer
 
   working :currently do
     "Shopify"
