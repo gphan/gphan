@@ -24,8 +24,9 @@ class SoftwareEngineer
   end
 
   hobbies do |era|
-    era.during_covid [:video_games, :reading, :long_walks]
-    era.before_covid [:video_games, :traveling, :beaches, :photography, :climbing, :running]
+    era.before_covid = [:video_games, :traveling, :beaches, :photography, :climbing, :running]
+    era.during_covid = [:video_games, :reading, :long_walks]
+    era.after_covid = (era.before_covid + era.during_covid).sample(3)
   end
 
   currently_playing "Elden Ring"
