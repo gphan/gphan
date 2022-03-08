@@ -1,6 +1,5 @@
 ### Hi there 👋 I'm Giang
 
-### About Me
 ```ruby
 require "readme_dsl"
 
@@ -15,18 +14,18 @@ class SoftwareEngineer
   end
 
   learning do
-    ["Ruby on Rails", "React", "GraphQL"]
+    [:ruby_on_rails, :react, :graphql]
   end
 
   previous_experiences do |industry|
     industry.years = "10+"
     industry.years_actual = nil
-    industry.skills = ["Java", "Microservices", "AWS", "Content Management"]
+    industry.skills = [:java, :microservices, :aws, :content_management]
   end
 
-  personal_interests do |era|
-    era.during_covid ["Video Games", "Reading", "Long Walks"]
-    era.before_covid ["Video Games", "Traveling", "Long Walks on Tropical Beaches"]
+  hobbies do |era|
+    era.during_covid [:video_games, :reading, :long_walks]
+    era.before_covid [:video_games, :traveling, :beaches, :photography, :climbing, :running]
   end
 
   currently_playing "Elden Ring"
