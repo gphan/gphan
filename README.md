@@ -24,12 +24,10 @@ class SoftwareEngineer
   end
 
   hobbies do |era|
-    era.before_covid = [:video_games, :traveling, :beaches, :photography, :climbing, :running]
-    era.during_covid = [:video_games, :reading, :long_walks]
-    era.after_covid = (era.before_covid + era.during_covid).sample(3)
+    era.before_covid = [:video_games, :computers, :traveling, :beaches, :photography, :climbing, :running]
+    era.during_covid = [:video_games, :computers, :reading, :long_walks]
+    era.after_covid = [:video_games, :computers] + (era.before_covid + era.during_covid).sample(3)
   end
-
-  currently_playing "Elden Ring"
 
   find_me do |at|
     at[:linkedin] = "https://www.linkedin.com/in/giangphan"
