@@ -2,7 +2,7 @@
 
 _That's pronounced yeh-ang_
 
-I use Github professionally ⌨️
+I use GitHub professionally ⌨️
 
 ### Ask me about the following:
 
